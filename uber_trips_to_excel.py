@@ -21,7 +21,7 @@ def clean_trips(df: pd.DataFrame) -> pd.DataFrame:
 
     date_cols = [c for c in df.columns if "date" in c or "time" in c]
     for col in date_cols:
-        df[col] = pd.to_datetime(df[col], errors="coerce")
+        df[col] = pd.to_datetime(df[col], errors="coerce", format="mixed")
 
     return df
 
