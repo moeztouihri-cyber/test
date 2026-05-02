@@ -3,3 +3,16 @@
 .RData
 .Ruserdata
 .positai
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Output files
+*.xlsx
+
+# Raw data (keep folder, ignore CSVs)
+data/*.csv
+
